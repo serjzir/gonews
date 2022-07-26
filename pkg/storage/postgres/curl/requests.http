@@ -1,0 +1,48 @@
+# curl http://localhost:8080/posts
+#    --include
+#    --header "Content-Type: application/json"
+#    --request "POST"
+#    --data '{"author_id":"0", "title": "Статья3","content": "Содержание статьи3", "created_at":3}'
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "author_id": 0,
+  "title": "Статья3",
+  "content": "Содержание статьи3",
+  "created_at": 3
+}
+
+###
+# curl http://localhost:8080/posts -X "GET"
+GET http://localhost:8080/posts
+
+###
+# curl http://localhost:8080/posts
+#    --include
+#    --header "Content-Type: application/json"
+#    --request "PUT"
+#    --data '{"id":0, "title": "Posts","content": "Content posts"}'
+PUT http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "title": "Posts",
+  "content": "Content posts"
+}
+
+###
+# curl http://localhost:8080/posts
+#    --include
+#    --header "Content-Type: application/json"
+#    --request "DELETE"
+#    --data '{"id":3}'
+DELETE http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "id": 0
+}
+
+###

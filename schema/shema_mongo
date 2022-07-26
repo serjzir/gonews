@@ -1,0 +1,19 @@
+use posts
+db.posts.insertMany(
+    [
+        {
+            "_id":1,
+            "title":"Статья",
+            "content": "Содержание статьи",
+            "author_id": 0,
+            "author_name": "Тестовое имя",
+            "created_at": 0
+        }, {
+        "_id":2,
+        "title":"Статья",
+        "content": "Содержание статьи",
+        "author_id": 0,
+        "author_name": "Тестовое имя",
+        "created_at": 1
+    }]
+)
